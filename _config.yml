@@ -6,7 +6,7 @@
 favicon: /favicon.ico
 
 # Set default keywords (Use a comma to separate)
-keywords: "Hexo, NexT"
+keywords: "Raincal, Blog"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -14,7 +14,7 @@ keywords: "Hexo, NexT"
 rss:
 
 # Specify the date when the site was setup
-#since: 2015
+since: 2015
 
 # icon between year and author @Footer
 authoricon: heart
@@ -78,9 +78,9 @@ menu_icons:
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Muse
-#scheme: Mist
-#scheme: Pisces
+# scheme: Muse
+scheme: Mist
+# scheme: Pisces
 
 
 # ---------------------------------------------------------------
@@ -120,8 +120,8 @@ font:
   # The `size` option use `px` as unit
   logo:
     external: true
-    family:
-    size:
+    family: Damion
+    size: 24
 
   # Font settings for <code> and code blocks.
   codes:
@@ -140,8 +140,11 @@ font:
 # Social Links
 # Key is the link label showing to end users.
 # Value is the target link (E.g. GitHub: https://github.com/iissnan)
-#social:
-  #LinkLabel: Link
+social:
+  GitHub: https://github.com/Raincal
+  Twitter: https://twitter.com/cyj228
+  Weibo: http://weibo.com/cyj228
+  Facebook: https://www.facebook.com/cyj228
 
 
 # Social Links Icons
@@ -156,6 +159,7 @@ social_icons:
   GitHub: github
   Twitter: twitter
   Weibo: weibo
+  Facebook: facebook
 
 
 # Sidebar Avatar
@@ -173,12 +177,12 @@ toc:
 
   # If true, all words will placed on next lines if header width longer then sidebar width.
   wrap: false
-  
+
 
 # Creative Commons 4.0 International License.
 # http://creativecommons.org/
 # Available: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero
-#creative_commons: by-nc-sa
+creative_commons: by-nc-sa
 #creative_commons:
 
 
@@ -209,11 +213,12 @@ sidebar:
 
 
 # Blog rolls
-#links_title: Links
-#links_layout: block
+links_title: Links
+# links_layout: block
 #links_layout: inline
-#links:
-  #Title: http://example.com/
+links:
+  RAINCAL: https://raincal.tk
+  SMMS: https://smms.cf
 
 
 # ---------------------------------------------------------------
@@ -258,7 +263,7 @@ post_wordcount:
 
 # Declare license on posts
 post_copyright:
-  enable: false
+  enable: true
   license: CC BY-NC-SA 3.0
   license_url: https://creativecommons.org/licenses/by-nc-sa/3.0/
 
@@ -295,6 +300,7 @@ mathjax:
   per_page: false
   cdn: //cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML
 
+
 # Han Support docs: https://hanzi.pro/
 han: false
 
@@ -309,8 +315,8 @@ han: false
 
 # Disqus
 disqus:
-  enable: false
-  shortname:
+  enable: true
+  shortname: raincal
   count: true
 
 # Hypercomments
@@ -341,9 +347,9 @@ changyan:
 ##  type: button
 
 # Share
-#jiathis:
+jiathis: true
 # Warning: JiaThis does not support https.
-#add_this_id:
+# add_this_id: ra-593769f72e3e22f2
 
 # Share
 #duoshuo_share: true
@@ -353,7 +359,7 @@ changyan:
 #google_site_verification:
 
 # Google Analytics
-#google_analytics:
+google_analytics: UA-89637345-1
 
 # Yandex Webmaster tools verification setting
 # See: https://webmaster.yandex.ru/
@@ -405,18 +411,18 @@ vkontakte_api:
 
 # Star rating support to each article.
 # To get your ID visit https://widgetpack.com
-rating: 
+rating:
   enable: false
   id:     #<app_id>
   color:  fc6423
-  
+
 
 # Show number of visitors to each article.
 # You can visit https://leancloud.cn get AppID and AppKey.
 leancloud_visitors:
-  enable: false
-  app_id: #<app_id>
-  app_key: #<app_key>
+  enable: true
+  app_id: xDCefA9EsTVuN1A9rHMfI8CG-gzGzoHsz
+  app_key: TgK8LqquaVhiY6lmrw6U8zcW
 
 # Show PV/UV of the website/page with busuanzi.
 # Get more information on http://ibruce.info/2015/04/04/busuanzi/
@@ -477,7 +483,7 @@ algolia_search:
 
 # Local search
 local_search:
-  enable: false
+  enable: true
   # if auto, trigger search by changing input
   # if manual, trigger search by pressing enter key or search button
   trigger: auto
@@ -519,7 +525,7 @@ pace: false
 #pace-theme-minimal
 # For example
 # pace_theme: pace-theme-center-simple
-pace_theme: pace-theme-minimal
+pace_theme: pace-theme-flash
 
 # Canvas-nest
 canvas_nest: false
@@ -548,36 +554,31 @@ vendors:
   _internal: lib
 
   # Internal version: 2.1.3
-  jquery:
+  jquery: //cdn.jsdelivr.net/jquery/2.1.3/jquery.min.js
 
   # Internal version: 2.1.5
-  # See: http://fancyapps.com/fancybox/
-  fancybox:
-  fancybox_css:
+  # Fancybox: http://fancyapps.com/fancybox/
+  fancybox: //cdn.jsdelivr.net/fancybox/2.1.5/jquery.fancybox.pack.js
+  fancybox_css: //cdn.jsdelivr.net/fancybox/2.1.5/jquery.fancybox.min.css
 
   # Internal version: 1.0.6
-  # See: https://github.com/ftlabs/fastclick
-  fastclick:
+  fastclick: //cdn.jsdelivr.net/fastclick/1.0.6/fastclick.min.js
 
   # Internal version: 1.9.7
-  # See: https://github.com/tuupola/jquery_lazyload
-  lazyload:
+  lazyload: //cdn.jsdelivr.net/jquery.lazyload/1.9.3/jquery.lazyload.min.js
 
   # Internal version: 1.2.1
-  # See: http://VelocityJS.org
-  velocity:
+  velocity: //cdn.jsdelivr.net/velocity/1.2.3/velocity.min.js
 
   # Internal version: 1.2.1
-  # See: http://VelocityJS.org
-  velocity_ui:
+  velocity_ui: //cdn.jsdelivr.net/velocity/1.2.3/velocity.ui.min.js
 
   # Internal version: 0.7.9
-  # See: https://faisalman.github.io/ua-parser-js/
-  ua_parser:
+  ua_parser: //cdn.jsdelivr.net/ua-parser.js/0.7.10/ua-parser.min.js
 
-  # Internal version: 4.6.2
-  # See: http://fontawesome.io/
-  fontawesome:
+  # Internal version: 4.4.0
+  # http://fontawesome.io/
+  fontawesome: //maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css
 
   # Internal version: 1
   # https://www.algolia.com
@@ -587,10 +588,10 @@ vendors:
   # Internal version: 1.0.2
   # See: https://github.com/HubSpot/pace
   # Or use direct links below:
-  # pace: //cdn.bootcss.com/pace/1.0.2/pace.min.js
-  # pace_css: //cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-flash.min.css
-  pace:
-  pace_css:
+  pace: //cdn.bootcss.com/pace/1.0.2/pace.min.js
+  pace_css: //cdn.bootcss.com/pace/1.0.2/themes/blue/pace-theme-flash.min.css
+  # pace:
+  # pace_css:
 
   # Internal version: 1.0.0
   # https://github.com/hustcc/canvas-nest.js
