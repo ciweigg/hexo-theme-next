@@ -3,12 +3,12 @@
 <!-- LOCAL: You can save these files to your site and update links -->
     {% if theme.gitment.mint %}
         {% set CommentsClass = "Gitmint" %}
-        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
-        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitmint@0.0.3-update.2/style/default.min.css">
+        <script src="//cdn.jsdelivr.net/npm/gitmint@0.0.3-update.2/dist/gitmint.browser.min.js"></script>
     {% else %}
         {% set CommentsClass = "Gitment" %}
-        <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-        <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitment@0.0.3/style/default.min.css">
+        <script src="//cdn.jsdelivr.net/npm/gitment@0.0.3/dist/gitment.browser.min.js"></script>
     {% endif %}
 <!-- END LOCAL -->
 
@@ -23,7 +23,7 @@
       <script type="text/javascript">
       function renderGitment(){
         var gitment = new {{CommentsClass}}({
-            id: document.location.href, 
+            id: document.location.href,
             owner: '{{ theme.gitment.github_user }}',
             repo: '{{ theme.gitment.github_repo }}',
             {% if theme.gitment.mint %}
