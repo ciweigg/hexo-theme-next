@@ -363,7 +363,7 @@ disqusapi:
   forum: 'raincal'
   site: 'https://raincal.top'
   api: 'https://raincal-blog-disqus.now.sh/api'
-  mode: 1
+  mode: 3
   badge: '博主'
   timeout: 3000
 
