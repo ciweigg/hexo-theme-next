@@ -27,7 +27,7 @@ favicon:
   #ms_browserconfig: /images/browserconfig.xml
 
 # Set default keywords (Use a comma to separate)
-keywords: "Raincal, Blog"
+keywords: "Raincal, Blog, React, React-Native, Angular, VSCode, Elixir"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
@@ -123,7 +123,7 @@ social:
   Twitter: https://twitter.com/cyj228 || twitter
   Weibo: https://weibo.com/cyj228 || weibo
   Facebook: https://www.facebook.com/cyj228 || facebook
-  #E-Mail: mailto:yourname@gmail.com || envelope
+  E-Mail: mailto:cyj94228@gmail.com || envelope
   #Google: https://plus.google.com/yourname || google
   #VK Group: https://vk.com/yourname || vk
   #StackOverflow: https://stackoverflow.com/yourname || stack-overflow
@@ -357,6 +357,16 @@ disqus:
   shortname: raincal
   count: true
 
+# Disqusapi
+disqusapi:
+  enable: true
+  forum: 'raincal'
+  site: 'https://raincal.top'
+  api: 'https://raincal-blog-disqus.now.sh/api'
+  mode: 1
+  badge: '博主'
+  timeout: 3000
+
 # Hypercomments
 #hypercomments_id:
 
@@ -389,7 +399,7 @@ valine:
 # Gitment
 # Introduction: https://imsun.net/posts/gitment-introduction/
 gitment:
-  enable: true
+  enable: false
   mint: true # RECOMMEND, A mint on Gitment, to support count, language and proxy_gateway
   count: true # Show comments count in post meta area
   lazy: false # Comments lazy loading with a button
